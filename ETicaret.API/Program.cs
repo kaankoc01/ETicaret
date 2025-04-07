@@ -1,4 +1,8 @@
+using ETicaret.Persistence.Contexts;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ETicaretDbContext>();
 
 // Add services to the container.
 
